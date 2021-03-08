@@ -1,0 +1,81 @@
+body {
+    background-image: url("grass.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+h4 {
+    text-align: center;
+    color: white;
+}
+
+root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    color: black;
+    height: 500px;
+    width: 500px;
+    padding-left: 425px;
+}
+
+.grid-item {
+    border: 1px solid forestgreen;
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    background-color: forestgreen;
+
+}
+
+.brown {
+    background-color: saddlebrown;
+}
+
+.bone {
+    background-image: url("bone.png");
+}
+
+#dangerBar {
+    width: 400px;
+    height: 22px;
+    border: 1px solid white;
+    background-color: green;
+    position: absolute;
+    left: 35%;
+}
+#bar {
+    height: 100%;
+    width: 0;
+    background-color: red;
+
+}
+
+.danger {
+    padding-left: 80px;
+}
+
+.danger2 {
+    padding-left: 160px;
+}
+
+.danger3 {
+    padding-left: 240px;
+}
+
+.danger4 {
+    padding-left: 320px;
+}
+
+.danger5 {
+    padding-left: 400px;
+}
